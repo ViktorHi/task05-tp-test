@@ -2,7 +2,7 @@
 run: bin/project test
 	./bin/project 
 bin/project: obj/functions.o obj/source.o  
-	gcc -o bin/project obj/functions.o obj/Source.o
+	gcc -o bin/project obj/functions.o obj/source.o
 obj/functions.o: src/functions.c
 	gcc -c src/functions.c -o obj/functions.o
 obj/source.o: src/source.c
