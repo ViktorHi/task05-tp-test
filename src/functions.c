@@ -1,6 +1,7 @@
 #include "../include/Header.h"
 
-int compare_date(const char* a, const char* b, char** err_mess)
+
+int com_date(const char* a, const char* b, char** err_mess)
 {
  if (strlen(a)!=10 || strlen(b) != 10)
   *err_mess = "date size isn't valid";
