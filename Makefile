@@ -13,7 +13,9 @@ obj/source.o: src/source.c
 #	$(CC) -c -o $@ $< $(CFLAGS) 
 
 test-library.out: test/test-library.c 
-	gcc -o $@ $^ $(CFLAGS) -lm -lncurses -Os
+#	gcc -o $@ $^ $(CFLAGS) -lm -lncurses -Os
+	gcc -o test-library.out test/test-library.c $(CFLAGS) -lm -lncurses -Os
+
 clean :
 	rm  *.o  *.asm  *.lst *.sym *.rel *.s *.gc* -f *.info
 
